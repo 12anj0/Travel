@@ -1,32 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>Travel destinations</title>
-    <link rel="stylesheet" href="main.css">
+  <meta charset="UTF-8">
+  <title>Travel Recommendation</title>
+  <link rel="stylesheet" href="./travel_recommendations.css">
 </head>
-<body class="body">
-    <header>
-        <div class="topnav">
-            <a class="active" href="./home.html">Home</a>
-            <a href="./about.html">About</a>
-            <a href="./contact.html">Contact</a>
-            <button type="button" >Clear</button>
-            <button type="submit">submit</button>
-            <input type="text" placeholder="Search..">
-          </div>
-    </header>
-    <main>
-        <div class="home">
-            <div>
-                <p>side item</p>
-            </div>
-            <div class="homeMain">
-            <p style="font-size: 50px;">EXPLORE DREAM DESTINATIONS</p>
-            <P style="font-size: 20px;">The little intro to motivate user
-                to travel across the world</P>
-            </div>
-        </div>
-    </main>
+<body>
+    <nav><h1>Travel Recommendation</h1>
+        <ul>
+            <li><a href="./home.html" id="home">Home</a></li>
+            <li><a href="./About.html" id="about">About Us</a></li>
+            <li><a href="./contact.html" id="contact">Contact Us</a></li>
+        <li><input type="text" id="search_bar" placeholder="Enter a destination or keyword">  </li>
+        <li><button onclick="submitSearch()" id='btnSearch'>Search</button>
+        <li><button onclick="clearResults()" id='btnReset'>Clear</button>    
+        </ul>
+    </nav>
+
+    <div class="intro">
+    <h1> EXPLORE DREAM DESTINATION </h1>
+
+    <p> Ever want to go on vacation but not know where to go?
+    This website will help you find the 
+    perfect travel destination for you! 
+    </p>
+    </div>
+
+    <div id="results">
+    </div>
+<script src="./travel_recommendations.js"></script>
 </body>
 </html>

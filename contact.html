@@ -1,35 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>Travel destinations</title>
-    <link rel="stylesheet" href="main.css">
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="./travel_recommendations.css">
 </head>
-<body class="body">
-    <header>
-        <div class="topnav">
-            <a href="./home.html">Home</a>
-            <a href="./about.html">About</a>
-            <a class="active"s href="./contact.html">Contact</a>
-            <button type="button" >Clear</button>
-            <button type="submit">submit</button>
-            <input type="text" placeholder="Search..">
-          </div>
-    </header>
-    <main class="contactMain">
-        <div>
-            <h1> Contact Us</h1>
-            <p>get in touch</p>
-        </div>
-        <div>
-            <form>
-                <input type="text" id="name" placeholder="Name" >
-                <input type="text" id="email" placeholder="email" >
-                <textarea id="message" placeholder="your Message" ></textarea>
-                <input type="submit" id="submit" value="submit" /> 
-            </form>
-        </div>
-    </main>
+<body>
+    <nav><h1>Travel Recommendation</h1>
+        <ul>
+        <li><a href="./home.html" id="home">Home</a></li>
+        <li><a href="./About.html" id="about">About Us</a></li>
+        <li><a href="./contact.html" id="contact">Contact Us</a></li> 
+        </ul>
+    </nav>
 
+    <div class="contact">
+        <h1> CONTACT US </h1>
+        <div id="contact_form">
+        <label for="name">Name</label>
+        <input id="name" placeholder="Enter your name"></input>
+        <label for="email">Email</label>
+        <input id="email" placeholder="Enter your email"></input>
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Enter your message"></textarea>
+        <button id="submitBtn">Submit</button>
+        </div>
+    </div>
+<script src="./travel_recommendations.js"></script>
 </body>
 </html>
